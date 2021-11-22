@@ -42,5 +42,5 @@ nps1.on('connect', (socket)=>{
 app.get('/',(req,res,next)=>{
 	res.sendFile(__dirname +'/index.html')
 })
-
-expressServer.listen('3000',()=>console.log(`Server Is Ready To Now...`))
+const PORT =process.env.port || 3000
+expressServer.listen(,()=>console.log(`Server Is Ready To Now...`))
